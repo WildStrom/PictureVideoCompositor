@@ -1,0 +1,21 @@
+PODS:
+  - VFCabbage (0.2)
+
+DEPENDENCIES:
+  - VFCabbage (from `https://github.com/VideoFlint/Cabbage.git`)
+
+EXTERNAL SOURCES:
+  VFCabbage:
+    :git: https://github.com/VideoFlint/Cabbage.git
+
+CHECKOUT OPTIONS:
+  VFCabbage:
+    :commit: 60a7619d0f797a7d3b6d72fd4fb30e2e6f4a6d99
+    :git: https://github.com/VideoFlint/Cabbage.git
+
+SPEC CHECKSUMS:
+  VFCabbage: 88b8b58671af2c6f9e4a7ed85a0150e759ab1ecf
+
+PODFILE CHECKSUM: e6f056e7174fea7c13ac620c41d5d68b2e0c7448
+
+COCOAPODS: 1.6.0.beta.2

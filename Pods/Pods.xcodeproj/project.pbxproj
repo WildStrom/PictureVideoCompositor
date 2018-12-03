@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0004D9C774A5EB15B799A4C38DC76D13 /* CompositionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB81B82AF0FD88D3A130A5336C60764C /* CompositionProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		194960982C6DD318046C688297BC9404 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AFB87B0D252E0B5A5F9C11ADBEE4F5F /* Accelerate.framework */; };
+		25DE7D7473957AA74238E947E6D9906A /* AVAssetReaderImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118C4147202DAF985F10C2DAF3CC91FF /* AVAssetReaderImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		26201415B769DE97389050A59C24D310 /* AudioMixer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDD820B2D288827A829CACC07AAFF63 /* AudioMixer.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3829A4A0319578CE022FF2A8B8569193 /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60BD6820F7432C8A8AFE1D373EF7088 /* ImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4EE107D411A3C0FBC65F8BEAD140F615 /* VideoCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E614D67DB60A56A75E631EDFDB24DCAC /* VideoCompositionInstruction.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		54395139139B816B62A3755EC780C4B6 /* Cabbage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD0316C48096BB55943C4885EE9B61FE /* Cabbage.bundle */; };
+		5AC30285D42710612C8761B3D803286E /* AVAssetTrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BE08D5B81FC1474A5CCB489DD5F59A /* AVAssetTrackResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5F1599E98F1117989B23EFD026A7D5AD /* ImageCompositionGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3C770D20C9424D244BBE1705C4CB6 /* ImageCompositionGroupProvider.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6BD0A76397185D18F561A12CA39F7790 /* ImageGeneratorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FC1DFAC637C1DB4D857B41F0E12D9 /* ImageGeneratorExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		754E0699DE8B07DA5D32F92B9FADD028 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47DB3E25A07053AF98D441DFD6C5C7E /* CoreImage.framework */; };
+		7F05601DC7B200AEB3299BB93EB443FA /* AVAssetImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC74909FD4936C5306EEA20DA11306EB /* AVAssetImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		81871FF8F01B8D95DEB3DEC16FAC8E00 /* black_empty.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 14DDFF16768C84F99AF7A30326C9D531 /* black_empty.mp4 */; };
+		83E5BFB944F12CFA590A66CF31846FC2 /* VideoTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02AE818FA9666FC62400F3FCFCAEB7E /* VideoTransition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		92068DA378D7DBF3AB131F300C93853E /* TrackConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE144AA874A566C57856572197F503B0 /* TrackConfiguration.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		98A5B8F5B9E7A0ED89FD1E2CC6539867 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A606F5B3E7A32CA523B741490DC955D6 /* Timeline.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		99500A18A4405EC57C6DB22B2227F834 /* PHAssetTrackResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CECDC0A108FEADA42A5AB7044CD7457 /* PHAssetTrackResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9D0101B572FC8E6CA35195B995A8A73D /* CompositionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13285CAF8189684703A5958FA3343D7A /* CompositionGenerator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A2D6AF70F7E3631D9CA072A410FA9314 /* CGMathFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA8E2766B1D1838AE5A5AA3ECA206FC /* CGMathFunctions.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A4C618060C0EA1A3CEDD3B4A85D7E4FF /* VFCabbage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D48C67A74A45A8FA398685A8109CE61 /* VFCabbage-dummy.m */; };
+		AB019785E5DBC0BEAF4C9339C12F88CF /* AudioProcessingTapHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA2BCA208CF2101627CDC2E4F5A7FF /* AudioProcessingTapHolder.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AD0188554186B6A748FD590137D5D5BB /* TimingFunctionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136D5B942B073226F9BFEA7B4A782DDB /* TimingFunctionFactory.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AD8554E1428B26900C5CCE618E09EAA6 /* AudioTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170D043D9A6A10C1C73D33AFA345008 /* AudioTransition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AE55B8B834D3C164A481030AFD24C94F /* Pods-PictureVideoCompositor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 827F93F937F1AE10AC93D0A2C532C6B7 /* Pods-PictureVideoCompositor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B86625722A435458EBDE68E2B0606A30 /* TrackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE169B329FE113EF3765B28312AEB3 /* TrackItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8D3190E17101F8935C4B61F3B137AF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C626A1220D1B8B748651B2709841021E /* CoreGraphics.framework */; };
+		BFF678DD4E65BA2D070A7623F7D61BBC /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC654D0084C83EA7173F3297250554E /* Resource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C13D67725A362B12C75AB3551061AB51 /* TimeRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6197E43200E37E6B4EFB650941BEE34 /* TimeRangeExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C292D4DFECD6DC52E6AFB2C698E07238 /* KeyframeVideoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C8BB82500610837E6950C6C00D380 /* KeyframeVideoConfiguration.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C500A5115FDA6A38455D2CF12D699E9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300DACAB1916E4E92C6D1089DB4A8567 /* Foundation.framework */; };
+		C8367592F65646A7101A6CC6EF86FFC3 /* CMTimeExtensition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5378B6215877F0E4F74764E1F28B93 /* CMTimeExtensition.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3415E83CCB472123D3B070871344FEC /* VFCabbage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0B4E15F497B0D19AA3DAB39B00697CF /* VFCabbage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D45A7092E36C2CFFFA38A36183FDB59B /* PHAssetImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C3CBA623155D28D721121A1D18E3FA /* PHAssetImageResource.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D8649EF359DBF4F2DD2024F156853B25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300DACAB1916E4E92C6D1089DB4A8567 /* Foundation.framework */; };
+		DE7DF102F3E3D1AA5E99013B574C8C8D /* CoreImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B50242A2F5FA19B8505B409E85B658 /* CoreImageExtension.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E042F9F97FF6D1B2370113FE77741909 /* ImageOverlayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0439C0FE6715F1BF0CCE3C9F2F933BC5 /* ImageOverlayItem.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E1D03953140FFBD96D6E54D58D125EC6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E5ED0F12FAD236008B3EF16F0EB210 /* Log.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EDE76A88F61528F426B38A08ABAD793C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646E6565741B2164CE7557EFC7E14F6E /* AVFoundation.framework */; };
+		F1AE8109A76924C4D0C9DA5305C772BB /* Pods-PictureVideoCompositor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB447435980C6E57BBBF2F433BCA8D8 /* Pods-PictureVideoCompositor-dummy.m */; };
+		FD4873BE37A21F3C5954EF02846A2D33 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A78191E83B155ADBF4858E41C5B784 /* CoreMedia.framework */; };
+		FE1189FE730FE627904941ED75918097 /* AudioProcessingChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E58F9BE44D14EB12230FD508E19B8E /* AudioProcessingChain.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FFAC64812926BF1451F66099F5CF6C3E /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE60B3C5F658F1DFC6B3B91E7D8E3F3D /* VideoCompositor.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64BE58CC3EF510B5046DBD9D9C355F40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 001A165AF838A87BFC0807B6D2077B86;
+			remoteInfo = "VFCabbage-Cabbage";
+		};
+		7E5F92652B05917DD1FFEE41B6BABAFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E623CD59ED76AE68FA849687B4EAD7FB;
+			remoteInfo = VFCabbage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0439C0FE6715F1BF0CCE3C9F2F933BC5 /* ImageOverlayItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageOverlayItem.swift; path = Cabbage/Sources/Track/ImageOverlayItem.swift; sourceTree = "<group>"; };
+		071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VFCabbage.xcconfig; sourceTree = "<group>"; };
+		0D48C67A74A45A8FA398685A8109CE61 /* VFCabbage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VFCabbage-dummy.m"; sourceTree = "<group>"; };
+		118C4147202DAF985F10C2DAF3CC91FF /* AVAssetReaderImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetReaderImageResource.swift; path = Cabbage/Sources/Track/Resource/AVAssetReaderImageResource.swift; sourceTree = "<group>"; };
+		13285CAF8189684703A5958FA3343D7A /* CompositionGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositionGenerator.swift; path = Cabbage/Sources/Core/CompositionGenerator.swift; sourceTree = "<group>"; };
+		136D5B942B073226F9BFEA7B4A782DDB /* TimingFunctionFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimingFunctionFactory.swift; path = Cabbage/Sources/Uitl/TimingFunctionFactory.swift; sourceTree = "<group>"; };
+		14C4B955252981B1F01AF37E7DD53CA9 /* Pods_PictureVideoCompositor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PictureVideoCompositor.framework; path = "Pods-PictureVideoCompositor.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DDFF16768C84F99AF7A30326C9D531 /* black_empty.mp4 */ = {isa = PBXFileReference; includeInIndex = 1; name = black_empty.mp4; path = Cabbage/Sources/Resource/black_empty.mp4; sourceTree = "<group>"; };
+		15B50242A2F5FA19B8505B409E85B658 /* CoreImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreImageExtension.swift; path = Cabbage/Sources/Uitl/CoreImageExtension.swift; sourceTree = "<group>"; };
+		15E5ED0F12FAD236008B3EF16F0EB210 /* Log.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Log.swift; path = Cabbage/Sources/Uitl/Log.swift; sourceTree = "<group>"; };
+		1600B5F4D7C992250CDC429A482D097C /* Pods-PictureVideoCompositor-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PictureVideoCompositor-acknowledgements.plist"; sourceTree = "<group>"; };
+		186FC1DFAC637C1DB4D857B41F0E12D9 /* ImageGeneratorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageGeneratorExtension.swift; path = Cabbage/Sources/Uitl/ImageGeneratorExtension.swift; sourceTree = "<group>"; };
+		1AA8E2766B1D1838AE5A5AA3ECA206FC /* CGMathFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGMathFunctions.swift; path = Cabbage/Sources/Uitl/CGMathFunctions.swift; sourceTree = "<group>"; };
+		1DBE169B329FE113EF3765B28312AEB3 /* TrackItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackItem.swift; path = Cabbage/Sources/Track/TrackItem.swift; sourceTree = "<group>"; };
+		26BA2BCA208CF2101627CDC2E4F5A7FF /* AudioProcessingTapHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioProcessingTapHolder.swift; path = Cabbage/Sources/Core/Audio/AudioProcessingTapHolder.swift; sourceTree = "<group>"; };
+		300DACAB1916E4E92C6D1089DB4A8567 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		358982E1FCBED235924D3C74C1F5FFE1 /* Pods-PictureVideoCompositor-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PictureVideoCompositor-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45BE08D5B81FC1474A5CCB489DD5F59A /* AVAssetTrackResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetTrackResource.swift; path = Cabbage/Sources/Track/Resource/AVAssetTrackResource.swift; sourceTree = "<group>"; };
+		4FDD820B2D288827A829CACC07AAFF63 /* AudioMixer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioMixer.swift; path = Cabbage/Sources/Core/Audio/AudioMixer.swift; sourceTree = "<group>"; };
+		50B5C1018ABF10AFF4DD174DFF231176 /* VFCabbage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VFCabbage.framework; path = VFCabbage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DB447435980C6E57BBBF2F433BCA8D8 /* Pods-PictureVideoCompositor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PictureVideoCompositor-dummy.m"; sourceTree = "<group>"; };
+		646E6565741B2164CE7557EFC7E14F6E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		6E5378B6215877F0E4F74764E1F28B93 /* CMTimeExtensition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMTimeExtensition.swift; path = Cabbage/Sources/Uitl/CMTimeExtensition.swift; sourceTree = "<group>"; };
+		79C3CBA623155D28D721121A1D18E3FA /* PHAssetImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHAssetImageResource.swift; path = Cabbage/Sources/Track/Resource/PHAssetImageResource.swift; sourceTree = "<group>"; };
+		7B7E47DA5EC82F024658449D89BB5509 /* VFCabbage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VFCabbage-Info.plist"; sourceTree = "<group>"; };
+		7D4C8BB82500610837E6950C6C00D380 /* KeyframeVideoConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeVideoConfiguration.swift; path = Cabbage/Sources/Track/Configuration/KeyframeVideoConfiguration.swift; sourceTree = "<group>"; };
+		7EC654D0084C83EA7173F3297250554E /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Cabbage/Sources/Track/Resource/Resource.swift; sourceTree = "<group>"; };
+		827F93F937F1AE10AC93D0A2C532C6B7 /* Pods-PictureVideoCompositor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PictureVideoCompositor-umbrella.h"; sourceTree = "<group>"; };
+		8AFB87B0D252E0B5A5F9C11ADBEE4F5F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		8DEA962E348DDDB164E70040289C5BF3 /* Pods-PictureVideoCompositor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PictureVideoCompositor.modulemap"; sourceTree = "<group>"; };
+		976B6C9A6AAAE417D506E216F62CC780 /* VFCabbage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VFCabbage.modulemap; sourceTree = "<group>"; };
+		9CECDC0A108FEADA42A5AB7044CD7457 /* PHAssetTrackResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PHAssetTrackResource.swift; path = Cabbage/Sources/Track/Resource/PHAssetTrackResource.swift; sourceTree = "<group>"; };
+		9D34994903C148C79EA7F13CED735748 /* VFCabbage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFCabbage-prefix.pch"; sourceTree = "<group>"; };
+		9FA917F2B79C80530485A7022A9BE786 /* Pods-PictureVideoCompositor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PictureVideoCompositor-Info.plist"; sourceTree = "<group>"; };
+		A170D043D9A6A10C1C73D33AFA345008 /* AudioTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioTransition.swift; path = Cabbage/Sources/Core/Model/AudioTransition.swift; sourceTree = "<group>"; };
+		A606F5B3E7A32CA523B741490DC955D6 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Cabbage/Sources/Core/Model/Timeline.swift; sourceTree = "<group>"; };
+		A6E6FCE453CC291F9254DF05992D807A /* Pods-PictureVideoCompositor-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PictureVideoCompositor-frameworks.sh"; sourceTree = "<group>"; };
+		AC77454F6822683BFCA437051BF2FB78 /* Pods-PictureVideoCompositor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PictureVideoCompositor.release.xcconfig"; sourceTree = "<group>"; };
+		AD0316C48096BB55943C4885EE9B61FE /* Cabbage.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Cabbage.bundle; path = "VFCabbage-Cabbage.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE144AA874A566C57856572197F503B0 /* TrackConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrackConfiguration.swift; path = Cabbage/Sources/Track/Configuration/TrackConfiguration.swift; sourceTree = "<group>"; };
+		B02AE818FA9666FC62400F3FCFCAEB7E /* VideoTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoTransition.swift; path = Cabbage/Sources/Core/Model/VideoTransition.swift; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C626A1220D1B8B748651B2709841021E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		CC0956AB2D20BAC07CED3C1F82E102DD /* ResourceBundle-Cabbage-VFCabbage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Cabbage-VFCabbage-Info.plist"; sourceTree = "<group>"; };
+		D0B4E15F497B0D19AA3DAB39B00697CF /* VFCabbage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VFCabbage-umbrella.h"; sourceTree = "<group>"; };
+		D47DB3E25A07053AF98D441DFD6C5C7E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		D60BD6820F7432C8A8AFE1D373EF7088 /* ImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageResource.swift; path = Cabbage/Sources/Track/Resource/ImageResource.swift; sourceTree = "<group>"; };
+		D6197E43200E37E6B4EFB650941BEE34 /* TimeRangeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeRangeExtension.swift; path = Cabbage/Sources/Uitl/TimeRangeExtension.swift; sourceTree = "<group>"; };
+		D9A78191E83B155ADBF4858E41C5B784 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
+		DB81B82AF0FD88D3A130A5336C60764C /* CompositionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompositionProvider.swift; path = Cabbage/Sources/Core/Model/CompositionProvider.swift; sourceTree = "<group>"; };
+		DE60B3C5F658F1DFC6B3B91E7D8E3F3D /* VideoCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCompositor.swift; path = Cabbage/Sources/Core/Video/VideoCompositor.swift; sourceTree = "<group>"; };
+		E614D67DB60A56A75E631EDFDB24DCAC /* VideoCompositionInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoCompositionInstruction.swift; path = Cabbage/Sources/Core/Video/VideoCompositionInstruction.swift; sourceTree = "<group>"; };
+		E6E58F9BE44D14EB12230FD508E19B8E /* AudioProcessingChain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioProcessingChain.swift; path = Cabbage/Sources/Core/Audio/AudioProcessingChain.swift; sourceTree = "<group>"; };
+		EC74909FD4936C5306EEA20DA11306EB /* AVAssetImageResource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageResource.swift; path = Cabbage/Sources/Track/Resource/AVAssetImageResource.swift; sourceTree = "<group>"; };
+		EDA3C770D20C9424D244BBE1705C4CB6 /* ImageCompositionGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCompositionGroupProvider.swift; path = Cabbage/Sources/Track/ImageCompositionGroupProvider.swift; sourceTree = "<group>"; };
+		FE63A3E8727176FE4BD2D57D62991D6E /* Pods-PictureVideoCompositor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PictureVideoCompositor.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05A71FC4B6B9CABAD77C29DED8492F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7F1F2C3E1653239C3435F1654AE895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C500A5115FDA6A38455D2CF12D699E9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68CC81EAA77D1C4F987CB1A54BE04052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				194960982C6DD318046C688297BC9404 /* Accelerate.framework in Frameworks */,
+				EDE76A88F61528F426B38A08ABAD793C /* AVFoundation.framework in Frameworks */,
+				B8D3190E17101F8935C4B61F3B137AF1 /* CoreGraphics.framework in Frameworks */,
+				754E0699DE8B07DA5D32F92B9FADD028 /* CoreImage.framework in Frameworks */,
+				FD4873BE37A21F3C5954EF02846A2D33 /* CoreMedia.framework in Frameworks */,
+				D8649EF359DBF4F2DD2024F156853B25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F6D032F9CD28ED01B2CF46A4EA898F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7372C18213687CADEC38C42BEBBE5523 /* VFCabbage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B9908599EB82EDA0DD2017D06393068 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		111D1DF065DB92524372EB70CA5A0671 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14DDFF16768C84F99AF7A30326C9D531 /* black_empty.mp4 */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		24A2DA0CBC510BEF1D1AAD650E317D09 /* Pods-PictureVideoCompositor */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA962E348DDDB164E70040289C5BF3 /* Pods-PictureVideoCompositor.modulemap */,
+				358982E1FCBED235924D3C74C1F5FFE1 /* Pods-PictureVideoCompositor-acknowledgements.markdown */,
+				1600B5F4D7C992250CDC429A482D097C /* Pods-PictureVideoCompositor-acknowledgements.plist */,
+				5DB447435980C6E57BBBF2F433BCA8D8 /* Pods-PictureVideoCompositor-dummy.m */,
+				A6E6FCE453CC291F9254DF05992D807A /* Pods-PictureVideoCompositor-frameworks.sh */,
+				9FA917F2B79C80530485A7022A9BE786 /* Pods-PictureVideoCompositor-Info.plist */,
+				827F93F937F1AE10AC93D0A2C532C6B7 /* Pods-PictureVideoCompositor-umbrella.h */,
+				FE63A3E8727176FE4BD2D57D62991D6E /* Pods-PictureVideoCompositor.debug.xcconfig */,
+				AC77454F6822683BFCA437051BF2FB78 /* Pods-PictureVideoCompositor.release.xcconfig */,
+			);
+			name = "Pods-PictureVideoCompositor";
+			path = "Target Support Files/Pods-PictureVideoCompositor";
+			sourceTree = "<group>";
+		};
+		7372C18213687CADEC38C42BEBBE5523 /* VFCabbage */ = {
+			isa = PBXGroup;
+			children = (
+				4FDD820B2D288827A829CACC07AAFF63 /* AudioMixer.swift */,
+				E6E58F9BE44D14EB12230FD508E19B8E /* AudioProcessingChain.swift */,
+				26BA2BCA208CF2101627CDC2E4F5A7FF /* AudioProcessingTapHolder.swift */,
+				A170D043D9A6A10C1C73D33AFA345008 /* AudioTransition.swift */,
+				EC74909FD4936C5306EEA20DA11306EB /* AVAssetImageResource.swift */,
+				118C4147202DAF985F10C2DAF3CC91FF /* AVAssetReaderImageResource.swift */,
+				45BE08D5B81FC1474A5CCB489DD5F59A /* AVAssetTrackResource.swift */,
+				1AA8E2766B1D1838AE5A5AA3ECA206FC /* CGMathFunctions.swift */,
+				6E5378B6215877F0E4F74764E1F28B93 /* CMTimeExtensition.swift */,
+				13285CAF8189684703A5958FA3343D7A /* CompositionGenerator.swift */,
+				DB81B82AF0FD88D3A130A5336C60764C /* CompositionProvider.swift */,
+				15B50242A2F5FA19B8505B409E85B658 /* CoreImageExtension.swift */,
+				EDA3C770D20C9424D244BBE1705C4CB6 /* ImageCompositionGroupProvider.swift */,
+				186FC1DFAC637C1DB4D857B41F0E12D9 /* ImageGeneratorExtension.swift */,
+				0439C0FE6715F1BF0CCE3C9F2F933BC5 /* ImageOverlayItem.swift */,
+				D60BD6820F7432C8A8AFE1D373EF7088 /* ImageResource.swift */,
+				7D4C8BB82500610837E6950C6C00D380 /* KeyframeVideoConfiguration.swift */,
+				15E5ED0F12FAD236008B3EF16F0EB210 /* Log.swift */,
+				79C3CBA623155D28D721121A1D18E3FA /* PHAssetImageResource.swift */,
+				9CECDC0A108FEADA42A5AB7044CD7457 /* PHAssetTrackResource.swift */,
+				7EC654D0084C83EA7173F3297250554E /* Resource.swift */,
+				A606F5B3E7A32CA523B741490DC955D6 /* Timeline.swift */,
+				D6197E43200E37E6B4EFB650941BEE34 /* TimeRangeExtension.swift */,
+				136D5B942B073226F9BFEA7B4A782DDB /* TimingFunctionFactory.swift */,
+				AE144AA874A566C57856572197F503B0 /* TrackConfiguration.swift */,
+				1DBE169B329FE113EF3765B28312AEB3 /* TrackItem.swift */,
+				E614D67DB60A56A75E631EDFDB24DCAC /* VideoCompositionInstruction.swift */,
+				DE60B3C5F658F1DFC6B3B91E7D8E3F3D /* VideoCompositor.swift */,
+				B02AE818FA9666FC62400F3FCFCAEB7E /* VideoTransition.swift */,
+				111D1DF065DB92524372EB70CA5A0671 /* Resources */,
+				F675413B71F4DEDB439B835CF5B45BDA /* Support Files */,
+			);
+			name = VFCabbage;
+			path = VFCabbage;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				0F6D032F9CD28ED01B2CF46A4EA898F2 /* Pods */,
+				D28AA6827190657D65CBE7B954C96DD3 /* Products */,
+				9B7D008763059D4A473A037651579086 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B7D008763059D4A473A037651579086 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24A2DA0CBC510BEF1D1AAD650E317D09 /* Pods-PictureVideoCompositor */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9B9908599EB82EDA0DD2017D06393068 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8AFB87B0D252E0B5A5F9C11ADBEE4F5F /* Accelerate.framework */,
+				646E6565741B2164CE7557EFC7E14F6E /* AVFoundation.framework */,
+				C626A1220D1B8B748651B2709841021E /* CoreGraphics.framework */,
+				D47DB3E25A07053AF98D441DFD6C5C7E /* CoreImage.framework */,
+				D9A78191E83B155ADBF4858E41C5B784 /* CoreMedia.framework */,
+				300DACAB1916E4E92C6D1089DB4A8567 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D28AA6827190657D65CBE7B954C96DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD0316C48096BB55943C4885EE9B61FE /* Cabbage.bundle */,
+				14C4B955252981B1F01AF37E7DD53CA9 /* Pods_PictureVideoCompositor.framework */,
+				50B5C1018ABF10AFF4DD174DFF231176 /* VFCabbage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F675413B71F4DEDB439B835CF5B45BDA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC0956AB2D20BAC07CED3C1F82E102DD /* ResourceBundle-Cabbage-VFCabbage-Info.plist */,
+				976B6C9A6AAAE417D506E216F62CC780 /* VFCabbage.modulemap */,
+				071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */,
+				0D48C67A74A45A8FA398685A8109CE61 /* VFCabbage-dummy.m */,
+				7B7E47DA5EC82F024658449D89BB5509 /* VFCabbage-Info.plist */,
+				9D34994903C148C79EA7F13CED735748 /* VFCabbage-prefix.pch */,
+				D0B4E15F497B0D19AA3DAB39B00697CF /* VFCabbage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VFCabbage";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DA4C9F8DD9EB66CC9E446FDAA57A2E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE55B8B834D3C164A481030AFD24C94F /* Pods-PictureVideoCompositor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C72436198984ACF3EF1FC399451A6A80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3415E83CCB472123D3B070871344FEC /* VFCabbage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		001A165AF838A87BFC0807B6D2077B86 /* VFCabbage-Cabbage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F0D480C7129E40E88F15AB8E45B4FCF /* Build configuration list for PBXNativeTarget "VFCabbage-Cabbage" */;
+			buildPhases = (
+				C48E87A7B40E733EB464F3547CC97004 /* Sources */,
+				05A71FC4B6B9CABAD77C29DED8492F41 /* Frameworks */,
+				6AD1B813F7F63C847972D41CAFC89813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VFCabbage-Cabbage";
+			productName = "VFCabbage-Cabbage";
+			productReference = AD0316C48096BB55943C4885EE9B61FE /* Cabbage.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		70092443ADD54470CA23DFD709D45A71 /* Pods-PictureVideoCompositor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55BDED0545683EBDA7EB2CE1870347B5 /* Build configuration list for PBXNativeTarget "Pods-PictureVideoCompositor" */;
+			buildPhases = (
+				8DA4C9F8DD9EB66CC9E446FDAA57A2E2 /* Headers */,
+				7112C7F733AAC75E5BEE3969D6D9D27F /* Sources */,
+				1D7F1F2C3E1653239C3435F1654AE895 /* Frameworks */,
+				20DA4F930CE4CEDADF340496C61C45D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6718492E410967064781B15124BF203C /* PBXTargetDependency */,
+			);
+			name = "Pods-PictureVideoCompositor";
+			productName = "Pods-PictureVideoCompositor";
+			productReference = 14C4B955252981B1F01AF37E7DD53CA9 /* Pods_PictureVideoCompositor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E623CD59ED76AE68FA849687B4EAD7FB /* VFCabbage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C9A54FB29F74B41CC7381C31094ADA0 /* Build configuration list for PBXNativeTarget "VFCabbage" */;
+			buildPhases = (
+				C72436198984ACF3EF1FC399451A6A80 /* Headers */,
+				399959F89F7D02208B889778675FD050 /* Sources */,
+				68CC81EAA77D1C4F987CB1A54BE04052 /* Frameworks */,
+				D63E75558B7B2B178CEDC715104EBEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A411764E06EA49F72E6BFA62A8D407FF /* PBXTargetDependency */,
+			);
+			name = VFCabbage;
+			productName = VFCabbage;
+			productReference = 50B5C1018ABF10AFF4DD174DFF231176 /* VFCabbage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D28AA6827190657D65CBE7B954C96DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70092443ADD54470CA23DFD709D45A71 /* Pods-PictureVideoCompositor */,
+				E623CD59ED76AE68FA849687B4EAD7FB /* VFCabbage */,
+				001A165AF838A87BFC0807B6D2077B86 /* VFCabbage-Cabbage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20DA4F930CE4CEDADF340496C61C45D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD1B813F7F63C847972D41CAFC89813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81871FF8F01B8D95DEB3DEC16FAC8E00 /* black_empty.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D63E75558B7B2B178CEDC715104EBEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54395139139B816B62A3755EC780C4B6 /* Cabbage.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		399959F89F7D02208B889778675FD050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26201415B769DE97389050A59C24D310 /* AudioMixer.swift in Sources */,
+				FE1189FE730FE627904941ED75918097 /* AudioProcessingChain.swift in Sources */,
+				AB019785E5DBC0BEAF4C9339C12F88CF /* AudioProcessingTapHolder.swift in Sources */,
+				AD8554E1428B26900C5CCE618E09EAA6 /* AudioTransition.swift in Sources */,
+				7F05601DC7B200AEB3299BB93EB443FA /* AVAssetImageResource.swift in Sources */,
+				25DE7D7473957AA74238E947E6D9906A /* AVAssetReaderImageResource.swift in Sources */,
+				5AC30285D42710612C8761B3D803286E /* AVAssetTrackResource.swift in Sources */,
+				A2D6AF70F7E3631D9CA072A410FA9314 /* CGMathFunctions.swift in Sources */,
+				C8367592F65646A7101A6CC6EF86FFC3 /* CMTimeExtensition.swift in Sources */,
+				9D0101B572FC8E6CA35195B995A8A73D /* CompositionGenerator.swift in Sources */,
+				0004D9C774A5EB15B799A4C38DC76D13 /* CompositionProvider.swift in Sources */,
+				DE7DF102F3E3D1AA5E99013B574C8C8D /* CoreImageExtension.swift in Sources */,
+				5F1599E98F1117989B23EFD026A7D5AD /* ImageCompositionGroupProvider.swift in Sources */,
+				6BD0A76397185D18F561A12CA39F7790 /* ImageGeneratorExtension.swift in Sources */,
+				E042F9F97FF6D1B2370113FE77741909 /* ImageOverlayItem.swift in Sources */,
+				3829A4A0319578CE022FF2A8B8569193 /* ImageResource.swift in Sources */,
+				C292D4DFECD6DC52E6AFB2C698E07238 /* KeyframeVideoConfiguration.swift in Sources */,
+				E1D03953140FFBD96D6E54D58D125EC6 /* Log.swift in Sources */,
+				D45A7092E36C2CFFFA38A36183FDB59B /* PHAssetImageResource.swift in Sources */,
+				99500A18A4405EC57C6DB22B2227F834 /* PHAssetTrackResource.swift in Sources */,
+				BFF678DD4E65BA2D070A7623F7D61BBC /* Resource.swift in Sources */,
+				98A5B8F5B9E7A0ED89FD1E2CC6539867 /* Timeline.swift in Sources */,
+				C13D67725A362B12C75AB3551061AB51 /* TimeRangeExtension.swift in Sources */,
+				AD0188554186B6A748FD590137D5D5BB /* TimingFunctionFactory.swift in Sources */,
+				92068DA378D7DBF3AB131F300C93853E /* TrackConfiguration.swift in Sources */,
+				B86625722A435458EBDE68E2B0606A30 /* TrackItem.swift in Sources */,
+				A4C618060C0EA1A3CEDD3B4A85D7E4FF /* VFCabbage-dummy.m in Sources */,
+				4EE107D411A3C0FBC65F8BEAD140F615 /* VideoCompositionInstruction.swift in Sources */,
+				FFAC64812926BF1451F66099F5CF6C3E /* VideoCompositor.swift in Sources */,
+				83E5BFB944F12CFA590A66CF31846FC2 /* VideoTransition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7112C7F733AAC75E5BEE3969D6D9D27F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1AE8109A76924C4D0C9DA5305C772BB /* Pods-PictureVideoCompositor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C48E87A7B40E733EB464F3547CC97004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6718492E410967064781B15124BF203C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VFCabbage;
+			target = E623CD59ED76AE68FA849687B4EAD7FB /* VFCabbage */;
+			targetProxy = 7E5F92652B05917DD1FFEE41B6BABAFC /* PBXContainerItemProxy */;
+		};
+		A411764E06EA49F72E6BFA62A8D407FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "VFCabbage-Cabbage";
+			target = 001A165AF838A87BFC0807B6D2077B86 /* VFCabbage-Cabbage */;
+			targetProxy = 64BE58CC3EF510B5046DBD9D9C355F40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		53F99F6B1862E780A72A99B751670C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6D1D7946E2478F0501A49C3627DD1618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VFCabbage";
+				INFOPLIST_FILE = "Target Support Files/VFCabbage/ResourceBundle-Cabbage-VFCabbage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Cabbage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		80207B3A22B9372718B5DE4B8557FA98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		80BFCB13811CD99FBEB0E84C2D654E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VFCabbage/VFCabbage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VFCabbage/VFCabbage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VFCabbage/VFCabbage.modulemap";
+				PRODUCT_MODULE_NAME = VFCabbage;
+				PRODUCT_NAME = VFCabbage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AE43C386BD3C821CF89055C8534429E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC77454F6822683BFCA437051BF2FB78 /* Pods-PictureVideoCompositor.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PictureVideoCompositor/Pods-PictureVideoCompositor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PictureVideoCompositor/Pods-PictureVideoCompositor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE55F91938E783A4D31B3F3ABF61927C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/VFCabbage";
+				INFOPLIST_FILE = "Target Support Files/VFCabbage/ResourceBundle-Cabbage-VFCabbage-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Cabbage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E0C4DFBE76BCEE0A509A05A3A8071738 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE63A3E8727176FE4BD2D57D62991D6E /* Pods-PictureVideoCompositor.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PictureVideoCompositor/Pods-PictureVideoCompositor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PictureVideoCompositor/Pods-PictureVideoCompositor.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF20A96D018B3C8CCC141AE1B89B092E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 071F78C0BBDA9216E99BDBC78B4C51C1 /* VFCabbage.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VFCabbage/VFCabbage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VFCabbage/VFCabbage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VFCabbage/VFCabbage.modulemap";
+				PRODUCT_MODULE_NAME = VFCabbage;
+				PRODUCT_NAME = VFCabbage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C9A54FB29F74B41CC7381C31094ADA0 /* Build configuration list for PBXNativeTarget "VFCabbage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80BFCB13811CD99FBEB0E84C2D654E70 /* Debug */,
+				FF20A96D018B3C8CCC141AE1B89B092E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F99F6B1862E780A72A99B751670C43 /* Debug */,
+				80207B3A22B9372718B5DE4B8557FA98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55BDED0545683EBDA7EB2CE1870347B5 /* Build configuration list for PBXNativeTarget "Pods-PictureVideoCompositor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0C4DFBE76BCEE0A509A05A3A8071738 /* Debug */,
+				AE43C386BD3C821CF89055C8534429E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F0D480C7129E40E88F15AB8E45B4FCF /* Build configuration list for PBXNativeTarget "VFCabbage-Cabbage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1D7946E2478F0501A49C3627DD1618 /* Debug */,
+				DE55F91938E783A4D31B3F3ABF61927C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
